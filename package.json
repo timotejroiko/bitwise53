@@ -8,6 +8,9 @@
     "test": "node ./test.js",
     "bench": "node ./bench.js"
   },
+  "repository": {
+		"url": "https://github.com/timotejroiko/bitwise53.git"
+	},
   "keywords": [
     "bitwise",
     "32",
@@ -22,6 +25,10 @@
     "shift"
   ],
   "author": "Timotej Valentin Rojko",
+	"funding": {
+		"type": "patreon",
+		"url": "https://patreon.com/timotejroiko"
+	},
   "license": "MIT",
   "devDependencies": {
     "benchmark": "^2.1.4",
