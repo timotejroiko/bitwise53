@@ -1,0 +1,30 @@
+{
+  "name": "bitwise53",
+  "version": "1.0.0",
+  "description": "Bitwise operations for integers up to 53 bits",
+  "main": "index.js",
+  "typings": "./index.d.ts",
+  "scripts": {
+    "test": "node ./test.js",
+    "bench": "node ./bench.js"
+  },
+  "keywords": [
+    "bitwise",
+    "32",
+    "53",
+    "bit",
+    "bigint",
+    "int",
+    "integer",
+    "and",
+    "or",
+    "xor",
+    "shift"
+  ],
+  "author": "Timotej Valentin Rojko",
+  "license": "MIT",
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "eslint": "^7.24.0"
+  }
+}
