@@ -15,8 +15,8 @@ This library provides functions to correctly perform bitwise opeations on number
 `npm install bitwise53`
 
 ```js
-const { and, or, xor, not, rshift, lshift } = require("bitwise53")
-// or import { and, or, xor, not, rshift, lshift } from "bitwise53"
+const { and, or, xor, not, rshift, lshift, ushift } = require("bitwise53")
+// or import { and, or, xor, not, rshift, lshift, ushift } from "bitwise53"
 
 and(a, b) // a & b
 or(a, b) // a | b
