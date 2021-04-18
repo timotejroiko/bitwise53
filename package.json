@@ -1,6 +1,6 @@
 {
   "name": "bitwise53",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Bitwise operations for integers up to 53 bits",
   "main": "index.js",
   "typings": "./index.d.ts",
