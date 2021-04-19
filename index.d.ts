@@ -58,9 +58,9 @@ declare module "bitwise53" {
 	 * `npm run bench`  
 	 * 
 	 * ```cs
-	 * Number x 738,481,279 ops/sec ±0.48% (90 runs sampled)
-	 * Bitwise53 x 730,536,122 ops/sec ±0.32% (96 runs sampled)
-	 * BigInt x 19,083,679 ops/sec ±1.58% (89 runs sampled)
+	 * Number 		x 738,481,279 ops/sec ±0.48% (90 runs sampled)
+	 * Bitwise53 	x 730,536,122 ops/sec ±0.32% (96 runs sampled)
+	 * BigInt 		x 19,083,679 ops/sec ±1.58% (89 runs sampled)
 	 * ```
 	 * 
 	 * ## Notes
