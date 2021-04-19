@@ -18,13 +18,13 @@ This library provides functions to correctly perform bitwise opeations on number
 const { and, or, xor, not, rshift, lshift, ushift } = require("bitwise53")
 // or import { and, or, xor, not, rshift, lshift, ushift } from "bitwise53"
 
-and(a, b) // a & b
-or(a, b) // a | b
-xor(a, b) // a ^ b
-not(a) // ~a
-rshift(a, 5) // a >> 5
-lshift(a, 5) // a << 5
-ushift(a, 5) // a >>> 5
+and(a, b)       // a & b
+or(a, b)        // a | b
+xor(a, b)       // a ^ b
+not(a)          // ~a
+rshift(a, 5)    // a >> 5
+lshift(a, 5)    // a << 5
+ushift(a, 5)    // a >>> 5
 ```
 
 ## Performance
@@ -45,9 +45,9 @@ There are some minor differences in behaviour compared to regular bitwise operat
 When shifting a negative number of bits, the right-hand operand overflows and loops around, for example `n >> -5` would result in `n >> 27` (32-5). BigInts on the other hand reverse the operation because they dont have a fixed size to overflow, so `n >> -5` would result in `n << 5`. This library follows the BigInt approach and reverses the operation:
 
 ```js
-555 >> -2 // 0
-555n >> -2n // 2220n
-rshift(555, -2) // 2220
+555 >> -2           // 0
+555n >> -2n         // 2220n
+rshift(555, -2)     // 2220
 ```
 
 The unsigned right shift function `ushift` assumes a 53 bit size by default, therefore it will produce different results from the `>>>` operator when shifting negative numbers. This function accepts a third parameter to specify the desired bit size to correctly place the sign bit. Setting it to 32 for example will produce the same results as the `>>>` operator:
